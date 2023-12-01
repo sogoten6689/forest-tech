@@ -1,6 +1,10 @@
-import React from "react";
+import { AboutType } from "../data/DataType";
 
-export const About = (props) => {
+export interface AboutProps  {
+  data?: AboutType
+}
+
+export const About = (props: AboutProps) => {
   return (
     <div id="about">
       <div className="container">
@@ -41,3 +45,4 @@ export const About = (props) => {
     </div>
   );
 };
+

@@ -1,7 +1,9 @@
-import { Image } from "./image";
-import React from "react";
+import { GalleryItemType } from "../data/DataType";
 
-export const Gallery = (props) => {
+export interface GalleryProps  {
+  data?: GalleryItemType[]
+}
+export const Gallery = (props: GalleryProps) => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
@@ -15,16 +17,18 @@ export const Gallery = (props) => {
         <div className="row">
           <div className="portfolio-items">
             {props.data
-              ? props.data.map((d, i) => (
+              ? props.data.map((d: GalleryItemType, i: number) => (
                   <div
                     key={`${d.title}-${i}`}
                     className="col-sm-6 col-md-4 col-lg-4"
                   >
-                    <Image
+                    {/* <Image title={d.title} largeImage={d.largeImage} smallImage={d.smallImage} /> */}
+                    {/* <Image title={d.title} largeImage={undefined} smallImage={undefined} /> */}
+                    {/* <Image
                       title={d.title}
                       largeImage={d.largeImage}
                       smallImage={d.smallImage}
-                    />
+                    /> */}
                   </div>
                 ))
               : "Loading..."}

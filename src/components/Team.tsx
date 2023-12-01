@@ -1,6 +1,11 @@
-import React from "react";
 
-export const Team = (props) => {
+import { TeamMemberType } from "../data/DataType";
+
+export interface TeamProps  {
+  data?: TeamMemberType[]
+}
+
+export const Team = (props: TeamProps) => {
   return (
     <div id="team" className="text-center">
       <div className="container">

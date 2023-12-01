@@ -1,26 +1,43 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import emailjs from "emailjs-com";
-import React from "react";
+import { ContactType } from "../data/DataType";
 
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
-};
-export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
 
-  const handleChange = (e) => {
+export interface ContactProps  {
+  data?: ContactType
+}
+
+
+export interface ContactForm  {
+  name: string
+  email: string
+  message: string
+}
+
+
+
+export const Contact = (props: ContactProps) => {
+  const [state, setState] = useState<ContactForm>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: { target: { name: string; value: string; }; }) => {
     const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
-  };
-  const clearState = () => setState({ ...initialState });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(name, email, message);
+    setState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }))
+  };
+  const clearState = () => setState({ name: "", email: "", message: "" });
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>): void {
+    event.preventDefault();
+    console.log(state?.name, state?.email, state?.message);
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", "YOUR_USER_ID")
       .then(
         (result) => {
           console.log(result.text);
@@ -30,7 +47,8 @@ export const Contact = (props) => {
           console.log(error.text);
         }
       );
-  };
+  }
+
   return (
     <div>
       <div id="contact">
@@ -44,7 +62,7 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage"  onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -80,7 +98,7 @@ export const Contact = (props) => {
                     name="message"
                     id="message"
                     className="form-control"
-                    rows="4"
+                    // rows="4"
                     placeholder="Message"
                     required
                     onChange={handleChange}
