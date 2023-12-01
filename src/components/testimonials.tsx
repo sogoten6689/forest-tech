@@ -1,6 +1,11 @@
-import React from "react";
 
-export const Testimonials = (props) => {
+import { TestimonialType } from "../data/DataType";
+
+export interface TestimonialProps  {
+  data?: TestimonialType[]
+}
+
+export const Testimonials = (props: TestimonialProps) => {
   return (
     <div id="testimonials">
       <div className="container">

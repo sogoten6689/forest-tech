@@ -1,6 +1,12 @@
-import React from "react";
 
-export const Services = (props) => {
+import { ServiceType } from "../data/DataType";
+
+export interface ServiceProps  {
+  data?: ServiceType[]
+}
+
+
+export const Services = (props: ServiceProps) => {
   return (
     <div id="services" className="text-center">
       <div className="container">

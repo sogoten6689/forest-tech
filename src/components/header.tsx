@@ -1,6 +1,10 @@
-import React from "react";
+import { HeaderType } from "../data/DataType";
 
-export const Header = (props) => {
+export interface AboutProps  {
+  data?: HeaderType
+}
+
+export const Header = (props: AboutProps) => {
   return (
     <header id="header">
       <div className="intro">

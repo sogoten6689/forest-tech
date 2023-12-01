@@ -1,6 +1,11 @@
-import React from "react";
 
-export const Features = (props) => {
+import { FeatureType } from "../data/DataType";
+
+export interface FeatureProps  {
+  data?: FeatureType[]
+}
+
+export const Features = (props: FeatureProps) => {
   return (
     <div id="features" className="text-center">
       <div className="container">
@@ -9,7 +14,7 @@ export const Features = (props) => {
         </div>
         <div className="row">
           {props.data
-            ? props.data.map((d, i) => (
+            ? props.data.map((d: FeatureType, i: number) => (
                 <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
                   {" "}
                   <i className={d.icon}></i>
