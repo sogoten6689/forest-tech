@@ -1,4 +1,16 @@
+import { ChangeEvent, useState } from "react";
+import { useTranslation } from "react-i18next";
+
 export const Navigation = () => {
+  const { t, i18n } = useTranslation('common');
+  const [selectedLanguage, setSelectedLanguage] = useState('');
+  
+
+  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    setSelectedLanguage(event.target.value);
+    i18n.changeLanguage(event.target.value);
+  };
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -61,9 +73,19 @@ export const Navigation = () => {
                 Contact
               </a>
             </li>
+            <li>
+              <a>
+                {/* <label htmlFor="language-select">{t('common:current_lang')}</label> */}
+                <select value={selectedLanguage} onChange={handleChange} className="page-scroll">
+                  <option value="en">English</option>
+                  <option value="vi">Việt Nam</option>
+                </select>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   );
 };
+
