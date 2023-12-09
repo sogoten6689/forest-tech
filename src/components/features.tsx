@@ -1,4 +1,5 @@
 
+import { useTranslation } from "react-i18next";
 import { FeatureType } from "../data/DataType";
 
 export interface FeatureProps  {
@@ -6,11 +7,13 @@ export interface FeatureProps  {
 }
 
 export const Features = (props: FeatureProps) => {
+  const { t } = useTranslation(['home', 'common']);
+
   return (
     <div id="features" className="text-center">
       <div className="container">
         <div className="col-md-10 col-md-offset-1 section-title">
-          <h2>Features</h2>
+          <h2>{t('home:features')}</h2>
         </div>
         <div className="row">
           {props.data
@@ -22,7 +25,7 @@ export const Features = (props: FeatureProps) => {
                   <p>{d.text}</p>
                 </div>
               ))
-            : "Loading..."}
+            : t('common:loading')}
         </div>
       </div>
     </div>

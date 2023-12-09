@@ -1,0 +1,160 @@
+{
+  "Header": {
+    "title": "Cùng phát triển dự án của bạn",
+    "paragraph": "Sức mạnh của sự hợp tác trong phát triển dự án.Hãy cùng nhau hợp sức và xây dựng dự án để tiến xa hơn"
+  },
+  "About": {
+    "paragraph": "Tạo động lực cho doanh nghiệp với các giải pháp phát triển hàng đầu: Tận dụng tài năng của các nhà phát triển tài năng tại Việt Nam để đạt được kết quả tiết kiệm chi phí, ưu việt và nhanh chóng",
+    "Why": [
+      "Nhanh hơn",
+      "Giảm chi phí"
+    ],
+    "Why2": [
+      "Đồng Hành",
+      "Trung Thực"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],"Services": [
+      {
+        "icon": "fa fa-wordpress",
+        "name": "Website",
+        "text": "Xây dựng các trang web đẹp, dễ sử dụng và thân thiện với người dùng."
+      },
+      {
+        "icon": "fa fa-cart-arrow-down",
+        "name": "E-commerce",
+        "text": "Xây dựng hệ thống thương mại điện tử dựa trên doanh nghiệp, nền tảng và thiết kế của bạn."
+      },
+      {
+        "icon": "fa fa-cloud-download",
+        "name": "Đám mây",
+        "text": "Xây dựng hệ thống của bạn trên dịch vụ đám mây."
+      },
+      {
+        "icon": "fa fa-language",
+        "name": "Nhiều Ngôn ngữ",
+        "text": "Chúng tôi hỗ trợ nhiều ngôn ngữ."
+      },
+      {
+        "icon": "fa fa-plane",
+        "name": "Hỗ trợ 24/7",
+        "text": "Chúng tôi sẵn sàng hỗ trợ 24/7."
+      },
+      {
+        "icon": "fa fa-pie-chart",
+        "name": "Lắng nghe và Hiểu biết",
+        "text": "Chúng tôi sẵn sàng lắng nghe và hiểu nhu cầu của bạn."
+      }
+    ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Cảm ơn sự đóng góp và nỗ lực của bạn trong thời gian qua\"",
+      "name": "Thomas Khoo"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Sự hỗ trợ của bạn đã giúp chúng tôi phát triển dự án của mình.\"",
+      "name": "Paul"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Tôi rất hạnh phúc khi làm việc với bạn.\"",
+      "name": "Dang Nguyen"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Đội của bạn luôn tích cực và năng động.\"",
+      "name": "Tien Nguyen"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Đội của bạn luôn sẵn sàng.\"",
+      "name": "Vy Tran"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Ứng dụng của bạn thật tuyệt vời.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/00.png",
+      "name": "Tuan Nguyen",
+      "job": "Developer"
+    },
+    {
+      "img": "img/team/06.jpg",
+      "name": "Lam Nguyen",
+      "job": "Leader Developer"
+    },
+    {
+      "img": "img/team/05.jpg",
+      "name": "Trong Bui",
+      "job": "Marketing Manager"
+    },
+    {
+      "img": "img/team/00.png",
+      "name": "Nam Dong",
+      "job": "Designer"
+    }
+  ],
+  "Contact": {
+    "address": "8 Le Lam Street, Tan Phu District, Ho Chi Minh City, Vietnam",
+    "phone": "+84 789 600 766",
+    "email": "forest.tech.studio@gmail.com",
+    "facebook": "https://www.facebook.com/ngoclam.nguyen.6689",
+    "twitter": "https://twitter.com/HaKenToRu",
+    "youtube": "https://www.youtube.com/channel/UCWlY7BdQcXPpbTq7SreQe_g"
+  },
+  "Features": [ 
+    { 
+      "icon": "fa fa-comments-o", "title": "Ứng dụng Chat", "text": "Xây dựng ứng dụng chat dựa trên nền tảng và thiết kế của bạn." }, { "icon": "fa fa-bullhorn", "title": "Thông báo", "text": "Thiết lập thông báo với dịch vụ bên thứ ba." }, { "icon": "fa fa-group", "title": "Xây dựng Nhóm", "text": "Xây dựng đội phát triển và kỹ thuật dựa trên nền tảng và thiết kế của bạn." }, { "icon": "fa fa-magic", "title": "Mở rộng", "text": "Mở rộng hoặc thu hẹp hệ thống của bạn dựa trên nhu cầu của bạn." } ]
+}
